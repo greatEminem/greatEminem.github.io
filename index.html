@@ -1,5 +1,16 @@
 <html>
 <body>
-
+<script script type="text/javascript">
+function show()
+{
+    var reader = new FileReader();
+    reader.onload = function() 
+    {
+        alert(this.result)
+    }
+    var f = document.getElementById("filePicker").files[0];
+    reader.readAsText(f);
+}
+</script>
 </body>
 </html>
